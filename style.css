@@ -1,0 +1,92 @@
+.hidden {
+  display: none; /* Oculta elementos definindo display como "none" */
+}
+
+.container {
+  display: flex; /* Define um container como um flex container */
+  flex-direction: column; /* Define a direção da flexão como coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  height: 100vh; /* Define a altura do container como 100% da viewport */
+}
+
+h1 {
+  text-align: center; /* Alinha o texto centralmente */
+}
+
+h2 {
+  text-align: center; /* Alinha o texto centralmente */
+}
+
+.menu-icon {
+  cursor: pointer; /* Define o cursor do mouse como ponteiro */
+}
+
+.menu {
+  display: none; /* Oculta o menu definindo display como "none" */
+}
+
+.menu.active {
+  display: block; /* Exibe o menu quando a classe "active" está presente */
+}
+
+.menu ul {
+  display: flex; /* Define a lista como um flex container */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+}
+
+.menu ul li {
+  margin-left: 10px; /* Define uma margem esquerda de 10px para os itens da lista */
+}
+
+.menu ul li a {
+  text-decoration: none; /* Remove a decoração de link */
+  color: black; /* Define a cor do texto como preto */
+}
+
+.contact-info {
+  display: none; /* Oculta as informações de contato definindo display como "none" */
+}
+
+.contact-info.active {
+  display: block; /* Exibe as informações de contato quando a classe "active" está presente */
+}
+
+.calculator {
+  display: none; /* Oculta a calculadora definindo display como "none" */
+  width: 200px; /* Define a largura da calculadora como 200px */
+  background-color: #f1f1f1; /* Define a cor de fundo como cinza claro */
+  border: 1px solid #ccc; /* Define uma borda de 1px sólida com cor cinza */
+  padding: 10px; /* Adiciona espaçamento interno de 10px */
+}
+
+#display {
+  width: 93%; /* Define a largura do campo de exibição como 93% da largura do pai */
+  height: 40px; /* Define a altura do campo de exibição como 40px */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+  padding: 5px; /* Adiciona espaçamento interno de 5px */
+  font-size: 18px; /* Define o tamanho da fonte como 18px */
+}
+
+.buttons {
+  display: grid; /* Define o layout dos botões como grid */
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
+  grid-gap: 5px; /* Define o espaçamento entre as células do grid */
+}
+
+button {
+  width: 100%; /* Define a largura dos botões como 100% */
+  height: 40px; /* Define a altura dos botões como 40px */
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+}
+
+.result {
+  margin-top: 10px; /* Adiciona uma margem superior de 10px */
+  text-align: center; /* Alinha o texto centralmente */
+}
+
+#result-text {
+  color: black; /* Define a cor do texto como preto */
+}
