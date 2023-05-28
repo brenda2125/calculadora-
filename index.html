@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Projeto KICK</h1> <!-- Título principal -->
+    <h2>Calculadora</h2> <!-- Subtítulo -->
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícone do menu -->
+    <div class="menu" id="menu">
+      <ul>i
+        <li><a href="#" onclick="toggleCalculator()">Início</a></li> <!-- Link para a seção de início -->
+        <li><a href="#" onclick="toggleAbout()">Sobre</a></li> <!-- Link para a seção "Sobre" -->
+        <li><a href="#" onclick="toggleContact()">Contato</a></li> <!-- Link para a seção de contato -->
+        <li><a href="#" onclick="hideCalculator()">Sair</a></li> <!-- Link para sair da calculadora -->
+      </ul>
+    </div>
+
+    <div class="about-info hidden" id="aboutInfo">
+      <p>Nome: Brenda Emilly Alvez de Oliveira</p> <!-- Informação sobre o nome -->
+      <p>Data de Nascimento: 11/10/2002</p> <!-- Informação sobre a data de nascimento -->
+      <p>Tenho interesse em evoluir na área de programação.</p> <!-- Informação sobre interesse -->
+    </div>
+
+    <div class="contact-info hidden" id="contactInfo">
+      <p>Telefone: (11) 1234-5678</p> <!-- Informação sobre telefone -->
+      <p>Instagram: @brendaalves</p> <!-- Informação sobre Instagram -->
+      <p>Email: brenda@example.com</p> <!-- Informação sobre email -->
+    </div>
+
+    <div class="calculator" id="calculator">
+      <input type="text" id="display" readonly> <!-- Campo de exibição dos números e resultado -->
+      <div class="buttons">
+        <button onclick="appendToDisplay('1')">1</button> <!-- Botão para adicionar o número 1 -->
+        <button onclick="appendToDisplay('2')">2</button> <!-- Botão para adicionar o número 2 -->
+        <button onclick="appendToDisplay('3')">3</button> <!-- Botão para adicionar o número 3 -->
+        <button onclick="appendToDisplay('4')">4</button> <!-- Botão para adicionar o número 4 -->
+        <button onclick="appendToDisplay('5')">5</button> <!-- Botão para adicionar o número 5 -->
+        <button onclick="appendToDisplay('6')">6</button> <!-- Botão para adicionar o número 6 -->
+        <button onclick="appendToDisplay('7')">7</button> <!-- Botão para adicionar o número 7 -->
+        <button onclick="appendToDisplay('8')">8</button> <!-- Botão para adicionar o número 8 -->
+        <button onclick="appendToDisplay('9')">9</button> <!-- Botão para adicionar o número 9 -->
+        <button onclick="appendToDisplay('0')">0</button> <!-- Botão para adicionar o número 0 -->
+        <button onclick="appendToDisplay('+')">+</button> <!-- Botão para adicionar a operação de adição -->
+        <button onclick="appendToDisplay('-')">-</button> <!-- Botão para adicionar a operação de subtração -->
+        <button onclick="appendToDisplay('*')">*</button> <!-- Botão para adicionar a operação de multiplicação -->
+        <button onclick="appendToDisplay('/')">/</button> <!-- Botão para adicionar a operação de divisão -->
+        <button onclick="clearDisplay()">C</button> <!-- Botão para limpar o campo de exibição -->
+        <button onclick="calculate()">=</button> <!-- Botão para realizar o cálculo -->
+      </div>
+      <div class="result">
+        <span id="result-text"></span> <!-- Área para exibir o resultado do cálculo -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>  <!-- Inclui o arquivo JavaScript externo 
+</body>
+</html>
